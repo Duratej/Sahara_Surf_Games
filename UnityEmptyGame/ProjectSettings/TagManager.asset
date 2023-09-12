@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backround
+    uniqueID: 2008569665
+    locked: 0
+  - name: Characters
+    uniqueID: 1323375325
+    locked: 0
+  - name: Effects
+    uniqueID: 3318487977
+    locked: 0
+  - name: Buttons
+    uniqueID: 385365577
+    locked: 0
