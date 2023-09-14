@@ -50,6 +50,9 @@ TagManager:
   - name: Effects
     uniqueID: 3318487977
     locked: 0
+  - name: Bars
+    uniqueID: 2632998971
+    locked: 0
   - name: Buttons
     uniqueID: 385365577
     locked: 0
