@@ -22,4 +22,7 @@ public class ScreenTracker : MonoBehaviour{
     public static int getScreenNumber() {
         return screenNumber;
     }
+    public static void setScreenNumber(int a) {
+        screenNumber = a;
+    }
 }
