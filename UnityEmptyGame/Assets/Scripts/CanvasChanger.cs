@@ -9,6 +9,7 @@ public class CanvasChanger : MonoBehaviour {
     public GameObject canvas5;
     public GameObject canvas6;
     public GameObject canvas7;
+    public GameObject canvas8;
 
     void Start() {
         CanvasNumber = 1;
@@ -47,8 +48,8 @@ public class CanvasChanger : MonoBehaviour {
             canvas6.SetActive(false);
         } else if (close == 7) {
             canvas7.SetActive(false);
-        } else {
-            Debug.Log("Error");
+        } else if (close == 8) {
+            canvas8.SetActive(false);
         }
     }
         public void SwapCanvas(int newNum) {
@@ -88,6 +89,11 @@ public class CanvasChanger : MonoBehaviour {
             canvas7.SetActive(true);
         } else { 
             canvas7.SetActive(false);
+        }
+        if (CanvasNumber == 8) {
+            canvas8.SetActive(true);
+        } else { 
+            canvas8.SetActive(false);
         }
     }
 }
