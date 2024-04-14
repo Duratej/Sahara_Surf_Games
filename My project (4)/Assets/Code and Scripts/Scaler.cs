@@ -2,26 +2,20 @@ using UnityEngine;
 
 public class Scaler : MonoBehaviour {
     private Camera mainCamera;
-    public int defualtX;
-        public int defualtY;
-        private float screenX; //float inorder to avoid int division
-        private float screenY;
-        private bool yScaleBigger; //if X is bigger this is false
-        
+    public float defualtX;
+        public float defualtY;
+        private float screenX = 1; //float inorder to avoid int division
+        private float screenY= 1;        
         private float finalScale;
 
     void Start() {
         mainCamera = Camera.main;
         screenX = Screen.width;
         screenY = Screen.height;
-        yScaleBigger = true;
-        if (defualtX / screenX >= defualtY / screenY) {
-            yScaleBigger = false;
-        }
-        if (yScaleBigger) {
-            finalScale = screenY / defualtY;
-        } else {
-            finalScale = screenX / defualtX;
+        finalScale = 1;
+        //camera auto fixes if screen is proportionally wider than area but not if taller.
+        if (screenY/screenX > defualtY/defualtX) {
+            finalScale =(screenY/screenX) / (defualtY/defualtX); 
         }
         mainCamera.orthographicSize *= finalScale;
         Debug.Log(defualtX);

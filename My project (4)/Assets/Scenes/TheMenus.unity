@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defualtX: 1080
-  defualtY: 1920
+  defualtY: 1960
 --- !u!1 &532415328
 GameObject:
   m_ObjectHideFlags: 0
